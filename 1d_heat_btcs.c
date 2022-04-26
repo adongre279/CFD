@@ -151,7 +151,7 @@ int main()
 
 	for (i = 1; i <= nx + 1; i++)
 	{
-		fprintf(fp, "%f,%f\n", x_ax[i], T[i]);
+		fprintf(fp, "%f,%f\n", x_ax[i], T[i]);      
 	}
 
 	fclose(fp);
