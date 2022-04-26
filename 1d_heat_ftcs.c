@@ -142,7 +142,7 @@ int main()
 
 	for (i = 1; i <= 1001; i++)
 	{
-		fprintf(fp1, "%f,%f\n", x_an[i], Tan[i]);
+		fprintf(fp1, "%f,%f\n", x_an[i], Tan[i]); // Writes the analytical solution for 1D heat equation
 	}
 
 	fclose(fp);
