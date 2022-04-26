@@ -133,8 +133,8 @@ int main()
 		}
 
 		// Solving the LHS for Crank-Nicolson Method using the TDMA algorithm
-		tridag(subdia, dia, supdiag, rhs, T, nx);
-		// TDMA(1, nx + 1, subdia, dia, supdiag, rhs, T);
+		// tridag(subdia, dia, supdiag, rhs, T, nx);
+		TDMA(1, nx + 1, subdia, dia, supdiag, rhs, T);
 
 		// Updating the RHS for time stepping
 		for (i = 2; i <= nx; i++)
