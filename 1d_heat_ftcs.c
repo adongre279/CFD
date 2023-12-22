@@ -30,8 +30,6 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-//#include <curses.h>     // For compiling on Linux machines
-#include <conio.h> // Comment this line while compiling on Linux machine
 #include <string.h>
 #include <math.h>
 
@@ -137,7 +135,7 @@ int main()
 
 	for (i = 1; i <= nx + 1; i++)
 	{
-		fprintf(fp, "%f,%f\n", x_ax[i], T[i]);
+		fprintf(fp, "%f,%f,%f\n", x_ax[i], T_ana[i], T[i]);
 	}
 
 	for (i = 1; i <= 1001; i++)
